@@ -1,56 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Pokemon_black";
+  src: url(./assets/fonts/Pokemon_black.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: "Pokemon_white";
+  src: url(./assets/fonts/Pokemon_white.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: crimson;
+  color: white;
+  width: 100%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Pokemon_white";
+}
+
+header h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 10px;
+}
+
+.HeaderContener {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HeaderSearchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.HeaderSearchbar input {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* text-transform: lowercase; casse l'appel à l'api, pourquoi ? */
+}
+
+.HeaderSearchbar button {
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  color: crimson;
+}
+
+.HeaderSearchbar button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px grey;
+}
+
+.researchButton {
+  width: 270px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  color: crimson;
+}
+
+.researchButton:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px grey;
+}
+
+.DisplaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 565px;
+}
+
+.DisplaySection h2 {
+  margin: 15px 0 0 0;
+  color: crimson;
+}
+
+.DisplaySection img {
+  width: 200px;
+  margin: 15px;
+  border-radius: 50%;
+  border: solid 10px crimson;
+}
+
+.DisplaySection ul {
+  list-style-image: url(./assets/images/pokeball.png);
+  width: 190px;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.DisplaySection li {
+  margin: 0px 0px 15px 0px;
+  padding-left: 10px;
+}
+
+footer {
+  background-color: crimson;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
 }
