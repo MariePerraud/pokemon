@@ -29,13 +29,17 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Pokemon_white";
 }
 
 header h1 {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-bottom: 10px;
+  font-family: "Pokemon_white";
+}
+
+header p {
+  font-size: 10px;
 }
 
 .HeaderContener {
@@ -59,7 +63,7 @@ header h1 {
   font-size: 18px;
   padding-left: 10px;
   padding-right: 10px;
-  /* text-transform: lowercase; casse l'appel à l'api, pourquoi ? */
+  /* text-transform: lowercase; */
 }
 
 .HeaderSearchbar button {

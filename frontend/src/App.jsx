@@ -34,6 +34,10 @@ function App() {
     <div className="App">
       <header>
         <h1>Pokedex</h1>
+        <p>
+          Indique le nom de ton pokemon en anglais et en minuscule (ex :
+          pikachu)
+        </p>
         <div className="HeaderContener">
           <div className="HeaderSearchbar">
             <input
